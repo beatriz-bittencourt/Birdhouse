@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários da alimentação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">
+                <img src="img/logo-escrita.png" alt="Logo Birdhouse" width="150">
+            </a>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="index.html#configBasicas" class="nav-link">Configurações</a></li>
+                    <li class="nav-item"><a href="#horarios" class="nav-link">Horários</a></li>
+                    <li class="nav-item"><a href="duvidas.html" class="nav-link">Dúvidas</a></li>
+                </ul>
+            </div>
+
+            <div onclick="menuShow()" class="mobile-menu-icon">
+                <button><img src="img/menu_white_36dp.svg" alt="Menu" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="index.html#configBasicas" class="nav-link">Configurações</a></li>
+                <li class="nav-item"><a href="#horarios" class="nav-link">Horários</a></li>
+                <li class="nav-item"><a href="duvidas.html" class="nav-link">Dúvidas</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <!--in main we have two sections, the first is an explanation about feeding times and the second is where the user can 
+            choose the eating time and this time will be shown next to-->
+        <section id="horarios">
+            <picture>
+                <source class="imgEntrada" media="(max-width: 1170px)" srcset="img/horario-peq.svg" type="image/svg">
+                <img class="imgEntrada" src="img/horario.svg" alt="Imagem Ilustrativa" width="480">
+            </picture>
+            
+            <div class="padrao-titulo-texto">
+                <h1>Defina os horários para alimentação</h1>
+                <p>Estabelecer horários fixos para alimentar passarinhos promove a saúde das aves, evita conflitos territoriais e proporciona uma experiência mais rica para observadores da natureza, fortalecendo nossa conexão com a fauna local e contribuindo para o equilíbrio ecológico.</p>
+            </div>
+        </section>
+
+        <section id="configHorario">
+            <div id="horariosAg">
+                <h2>Horários agendados</h2>
+                <p id="parag">Aqui você poderá ver os horários já agendados para a alimentação dos pássaros.</p><br>
+                <div id="horas">
+                <p>12:30 //
+                18:10 //
+                00:50 //
+                15:05 //
+                07:25 //
+                </p>
+                </div>
+            </div>
+            
+            <div>
+                <div  id="agendarH">
+                    <h2>Agendar horário</h2>
+                    <p id="parag">Agende aqui o horário para a alimentação automática! Escolha qual será a hora e minuto que deseja alimentar os bichinhos. (formato 24 horas)</p>
+                </div>
+
+                <div id="form"><br>
+                      <label>Hora: </label>
+                      <input type="text" class="hAgendar" id="hora" name="hora">
+                    
+                        <label>Minuto: </label>
+                        <input type="text" class="hAgendar" name="minuto">
+                </div>
+
+                <div id="botoes">
+                    <a id="botao" href="">Adicionar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div id="proj">
+            <h4>Projeto</h4>
+            <p>Este projeto interdisciplinar (que engloba as matérias: Programação WEB, Programação para Dispositivos Móveis e Sistemas Operacionais II) é um site responsivo usando HTML, CSS e JavaScript, capaz de ser visualizado desde telas de computadores até telas de celulares. Foi feito por Beatriz Bittencourt em conjunto com os alunos Gabriel Corrêa, Renan Carlos e Samuel Marques, que ficaram responsáveis por todo o complemento, como a pesquisa e trabalho com a placa ESP32, peças necessárias, fios e a programação da placa.
+            </p>
+            <p>
+                As ilustrações desse site foram feitas usando <a target="_blank" href="https://storyset.com/nature">Storyset</a>
+            </p>
+        </div>
+
+        <div id="desenv">
+            <div>
+                <h4>Encontre os desenvolvedores</h4>
+            </div>
+            <div>
+                <p><a class="link-dev" target="_blank" href="https://www.linkedin.com/in/beatriz-bittencourt-51a71b217/"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Beatriz Bittencourt</a></p>
+                <p><a class="link-dev" target="_blank" href="#"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Gabriel Corrêa</a></p>
+                <p><a class="link-dev" target="_blank" href="#"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Renan Carlos</a></p>
+                <p><a class="link-dev" target="_blank" href="https://www.linkedin.com/in/samuel-marques-dos-santos-41b00728a/"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Samuel Marques</a></p> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

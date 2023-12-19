@@ -1,0 +1,14 @@
+University project using web development (HTML, CSS and JavaScript), Linux and Arduino.
+
+
+Birdhouse is a website to control some things in an automatic cage, including: downloading bird movement (entrances and exits), establishing feeding schedules and answering questions about food, the birds and the cage.
+
+
+***IMPORTANT
+For the project to work 100% correctly, you need Arduino codes that complement and provide practical functionality, as well as Arduino parts. However, these codes are not completely ready and currently I can no longer access the Arduino parts to completely finish the project.
+
+
+-------------
+
+
+**The web part is practically ready and fully responsive for use. If you want to use it, give credits ;)

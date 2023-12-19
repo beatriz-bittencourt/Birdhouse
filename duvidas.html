@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdhouse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">
+                <img src="img/logo-escrita.png" alt="Logo Birdhouse" width="150">
+            </a>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="index.html#configBasicas" class="nav-link">Configurações</a></li>
+                    <li class="nav-item"><a href="horarios.html" class="nav-link">Horários</a></li>
+                    <li class="nav-item"><a href="#duvidas" class="nav-link">Dúvidas</a></li>
+                </ul>
+            </div>
+
+            <div onclick="menuShow()" class="mobile-menu-icon">
+                <button><img src="img/menu_white_36dp.svg" alt="Menu" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="index.html#configBasicas" class="nav-link">Configurações</a></li>
+                <li class="nav-item"><a href="horarios.html" class="nav-link">Horários</a></li>
+                <li class="nav-item"><a href="#duvidas" class="nav-link">Dúvidas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!--In the main we have the frequently asked questions section (some questions that are more questionable (works 
+            together with the "script.js" file)) and the "ask me your question" section (here the user goes to their email 
+            to send their previously unanswered question)-->
+        <section id="duvidas">
+            <img class="imgEntrada" src="img/duvidas.svg" alt="Imagem Ilustrativa" width="480" loading="eager">
+                <div  class="padrao-titulo-texto"> 
+                    <h1>Ficou com alguma dúvida?</h1> <br>
+                    <p>Esta seção foi elaborada com o propósito de proporcionar esclarecimentos acerca da alimentação do passarinhos e cuidados a serem tomados com a casinha. Abaixo, disponibilizamos uma lista das perguntas mais comuns relacionadas a esse tema, acompanhadas de suas respostas.</p>
+                </div>
+        </section>
+
+        <section id="respostas">
+            <div>
+                <h2>Dúvidas frequentes</h2>
+                <br>
+                <div class="duvida">
+                    <h3>Quais os melhores tipos de ração para passarinhos?</h3>
+                    <img src="img/arrow-down.svg" alt="Abaixar">
+                    <p class="paragrafo">
+                        Depende de qual espécie de pássaros estão indo comer na casinha, se forem pássaros mais selvagens geralmente recomendamos <strong>misturas de sementes</strong>, elas incluem sementes de girassol, milho, trigo, aveia, entre outras. Agora, se forem animais domésticos ou não selvagens, <strong>alpiste</strong> é uma boa escolha e pode ser até mais facilmente achado no mercado.
+                    </p>
+                </div>
+                <br>
+                <div class="duvida">
+                    <h3>Com que frequência devo reabastecer o alimentador automático?</h3>
+                    <img src="img/arrow-down.svg" alt="Abaixar">
+                    <p class="paragrafo">
+                        Depende muito da <strong>quantidade</strong> de pássaros que estão indo se alimetar na casinha. Veja nos primeiros dias como os bichinhos irão se comportar e sempre olhe o reservatório de comida, assim você conseguirá ter uma métrica de quanta comida precisará colocar e de quanto em quanto tempo.
+                    </p>
+                </div>
+                <br>
+                <div class="duvida">
+                    <h3>É possível atrair pássaros específicos com a alimentação automática?</h3>
+                    <img src="img/arrow-down.svg" alt="Abaixar">
+                    <p class="paragrafo">
+                        Sim! Mas tenha em mente que tudo depende da <strong>região em que a casinha está localizada</strong> , do <strong>tamanho da casinha</strong> e da <strong>escolha de alimentos</strong> que você deixou no reservatório. Pense que você só vai conseguir atrair pássaros que vivem em regiões próximas de sua localidade, a casinha também tem que ter o tamanho certo para determinadas espécies que são maiores e não entrariam em casinhas menores, e, por fim, os pássaros tem preferências por determinados alimentos, então pesquise quais alimentos são os preferidos dos pássaros que deseja atrair e boa sorte!
+                    </p>
+                </div>
+                <br>
+                <div class="duvida">
+                    <h3>É necessário limpar o alimentador automático? Com que frequência?</h3>
+                    <img src="img/arrow-down.svg" alt="Abaixar">
+                    <p class="paragrafo">
+                        Depende do <strong>tipo de alimento</strong> que você deixou no reservatório e de <strong>quais tipos de pássaros</strong> que estão entrando na casinha. Verifique periódicamente, nos primeiros dias, para saber o quão suja a casinha vai ficar e assim você saberá, em média, de quanto em quanto tempo ela precisa de limpeza. Vá ajustando a rotina de limpeza conforme achar necessário.
+                    </p>
+                </div>
+                <br>
+                <div class="duvida">
+                    <h3>Quais vantagens o alimentador automático pode trazer?</h3>
+                    <img src="img/arrow-down.svg" alt="Abaixar">
+                    <p class="paragrafo">
+                        Os alimentadores automáticos oferecem uma <strong>fonte constante de alimento</strong>, e ao oferecer uma variedade de alimentos é possível <strong>diversificar a dieta dos pássaros</strong>, proporcionando mais nutrientes especialmente em áreas onde recursos naturais são escassos. Alimentadores automáticos oferecem uma oportunidade para os observadores de aves <strong>estudarem e apreciarem</strong> a vida dos bichinhos de perto, promovendo a conexão com a natureza.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mandePerguntas">
+            <img id="imgConfig" src="img/mandePerg.svg" alt="Imagem Ilustrativa" width="480" height="480" loading="lazy">
+            <div>
+               <div  class="padrao-titulo-texto">
+                <h1>Sua dúvida ainda não foi respondida?</h1> <br>
+                <p>Caso sua dúvida não tenha sido abordada nas informações acima e ainda careça de resposta, ficamos à disposição para auxiliá-lo, basta entrar em contato conosco por meio do nosso endereço de e-mail. Ao fazer isso, você terá a oportunidade de detalhar sua pergunta de maneira mais específica, permitindo-nos oferecer os esclarecimentos necessários de acordo com a sua solicitação.</p>
+            </div>
+
+            <div id="mandeEmail">
+                <a id="botao" target="_blank" href="mailto:contato@birdhouse.com">Mande-nos um e-mail!</a>
+            </div> 
+            </div>
+            
+    </section>
+    </main>
+
+    <footer>
+        <div id="proj">
+            <h4>Projeto</h4>
+            <p>Este projeto interdisciplinar (que engloba as matérias: Programação WEB, Programação para Dispositivos Móveis e Sistemas Operacionais II) é um site responsivo usando HTML, CSS e JavaScript, capaz de ser visualizado desde telas de computadores até telas de celulares. Foi feito por Beatriz Bittencourt em conjunto com os alunos Gabriel Corrêa, Renan Carlos e Samuel Marques, que ficaram responsáveis por todo o complemento, como a pesquisa e trabalho com a placa ESP32, peças necessárias, fios e a programação da placa.
+            </p>
+            <p>
+                As ilustrações desse site foram feitas usando <a target="_blank" href="https://storyset.com/nature">Storyset</a>
+            </p>
+        </div>
+
+        <div id="desenv">
+            <div>
+                <h4>Encontre os desenvolvedores</h4>
+            </div>
+            <div>
+                <p><a class="link-dev" target="_blank" href="https://www.linkedin.com/in/beatriz-bittencourt-51a71b217/"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Beatriz Bittencourt</a></p>
+                <p><a class="link-dev" target="_blank" href="#"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Gabriel Corrêa</a></p>
+                <p><a class="link-dev" target="_blank" href="#"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Renan Carlos</a></p>
+                <p><a class="link-dev" target="_blank" href="https://www.linkedin.com/in/samuel-marques-dos-santos-41b00728a/"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Samuel Marques</a></p> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

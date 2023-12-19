@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #e7b820;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+.nav-bar img{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 500;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+/* --- FIM HEADER --- */
+
+
+/* --- MAIN INÍCIO --- */
+main{
+    color: rgb(58, 58, 58);
+}
+
+#inicio,#horarios,#duvidas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 40px 30px 0px 30px;
+    position: relative;
+}
+
+#configHorario{
+    margin: 60px 10px;
+}
+
+.padrao-titulo-texto{
+    max-width: 650px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+#inicio h1, #horarios h1{
+    margin-bottom: 25px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+  
+#configBasicas,#mandePerguntas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 40px 30px 0px 30px;;
+}
+
+/* --- MAIN HORÁRIOS --- */
+
+#configHorario{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    padding: 40px 110px 128px 110px;
+}
+
+#horarios{
+    margin: 0px 10px 60px 10px;  
+}
+
+#horariosAg, #agendarH{
+    max-width: 540px;
+    text-align: justify;
+}
+
+#horariosAg{
+    margin-right: 8%;
+}
+
+#horariosAg h2, #agendarH h2{
+    margin-bottom: 20px;
+}
+
+#hora{
+    margin-right: 5%;
+}
+
+.hAgendar{
+    padding: 0.7rem;
+    max-width: 8rem;
+}
+
+
+/* --- FIM MAIN HORÁRIOS --- */
+
+
+#configBasicas h1{
+    margin-bottom: 25px;
+}
+
+#botoes{
+    margin-top: 70px;
+}
+
+#botao{
+    background-color: #F6BB00;
+    padding: 16px 28px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#botao:hover{
+    background-color: #b78e06;
+    transition: ease-in-out .3s;
+}
+
+#botao-transp{
+    background-color: transparent;
+    color: #e1ac00;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
+
+#botao-transp:hover{
+    color: #b78e06;
+    transition: ease-in-out .3s;
+}
+
+
+#respostas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#respostas h2{
+    margin-top: 3%;
+}
+
+.duvida h3 {
+    border: 2px solid #F6BB00;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida {
+    position: relative;
+    max-width: 1200px;
+}
+
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo {
+    text-align: justify;
+    border-right: 1px solid #F6BB00;
+    border-bottom: 1px solid #F6BB00;
+    border-left: 1px solid #F6BB00;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+#mandePerguntas{
+    margin-top: 5%;
+}
+
+#mandeEmail{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* --- FIM MAIN INÍCIO --- */
+
+
+/* --- FOOTER --- */
+footer{
+    margin-top: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 17%;
+    padding: 3% 2%;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 12px 12px 0 0;
+}
+
+#proj{
+    max-width: 600px;
+    text-align: justify;
+}
+
+#proj h4, #desenv h4{
+    margin-bottom: 20px;
+}
+
+#desenv p{
+    margin-bottom: 10px;
+}
+
+footer #desenv .link-dev{
+    text-decoration: none;
+}
+
+#desenv p a,#proj p a{
+    color: #fff;
+}
+
+/* --- FIM FOOTER --- */
+
+
+/* --- responsividade --- */
+@media screen and (max-width: 1290px){
+    #configBasicas, #botoes{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 16px 20px;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .hAgendar{
+        margin-bottom: 20px;
+    }
+        
+    .duvida{
+        max-width: 1000px;
+    }
+
+    main{
+        margin: 0 5%;
+    }
+}
+
+
+@media screen and (max-width: 1170px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none; 
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+}    
+
+@media screen and (max-width: 1140px){
+    
+    #inicio,#configBasicas,#horarios,#configHorario,#duvidas,#mandePerguntas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .padrao-titulo-texto h1{
+        text-align: center;
+    }
+
+    #inicio .imgEntrada{
+        height: 300px;
+    }
+
+     #imgConfig,.imgEntrada{
+        height: 320px;
+    }
+
+    footer{
+        gap: 5%;
+    }
+
+    #configHorario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    #horariosAg{
+        margin: 0px;
+    }
+
+    #agendarH{
+        margin-top: 50px;
+    }
+
+    #horariosAg, #agendarH{
+        max-width: 650px;
+        text-align: justify;
+        align-items: center;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    
+    .hAgendar{
+        margin-left: 20px;
+    }
+
+    .duvida{
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .imgEntrada{
+        height: 380px;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer #proj{
+        max-width: fit-content;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px; 
+        margin: 3% 5%;
+    }
+
+    #desenv{
+        display: block;
+        margin: 3% 5%;
+    }
+
+    footer h4{
+        margin-bottom: 50px;
+    }
+
+    #horariosAg{
+        margin-bottom: 30px
+    }
+
+    main{
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .duvida{
+        max-width: 467px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    #inicio .imgEntrada{
+        width: 200px;
+        height: auto;
+    }
+
+    #configBasicas{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #configBasicas #botoes{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #configBasicas #imgConfig{
+        width: 280px;
+        height: auto;
+    }
+
+    #horariosAg, #agendarH{
+        padding: 5px;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .duvida{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .imgEntrada{
+        height: 230px;
+    }
+    
+    #horariosAg h2, #agendarH h2{
+        padding: 5px;
+        max-width: 300px;
+    }
+    
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgEntrada{
+        width: 250px;
+    }
+
+    #imgConfig{
+        width: 250px;
+        height: auto;
+    }
+
+    .duvida{
+        max-width: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 431px){
+    main{
+        margin: 0 5%;
+    }
+
+    #botao-transp{
+        padding: 0;
+        margin-top: 10%;
+    }
+    
+    .duvida{
+        max-width: 270px;
+    }
+}

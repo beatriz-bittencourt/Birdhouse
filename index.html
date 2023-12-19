@@ -1,0 +1,111 @@
+<!--main page of the website
+    here we have an introduction to Birdhouse and some explanations of some features-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdhouse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!--in the header we have the navigation bar for desktop and another for smaller devices, 
+            both are basically the same, what differentiates both is JavaScript ("script.js" file)
+        
+            ***all the html pages have this navbar configuration-->
+        <nav class="nav-bar">
+            <a href="index.html">
+                <img src="img/logo-escrita.png" alt="Logo Birdhouse" width="150">
+            </a>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#configBasicas" class="nav-link">Configurações</a></li>
+                    <li class="nav-item"><a href="horarios.html" class="nav-link">Horários</a></li>
+                    <li class="nav-item"><a href="duvidas.html" class="nav-link">Dúvidas</a></li>
+                </ul>
+            </div>
+
+            <div onclick="menuShow()" class="mobile-menu-icon">
+                <button><img src="img/menu_white_36dp.svg" alt="Menu" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#configBasicas" class="nav-link">Configurações</a></li>
+                <li class="nav-item"><a href="horarios.html" class="nav-link">Horários</a></li>
+                <li class="nav-item"><a href="duvidas.html" class="nav-link">Dúvidas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>  
+        <!--in the main one we have 2 sections, the first is an introduction to the topic and the second has two functionalities: 
+            downloading the movement (downloading the number of birds that entered and left the litle house) and the link to 
+            configure the hours and minutes that feeding will take place-->
+        <section id="inicio">
+            <picture>
+                <source class="imgEntrada" media="(max-width: 1170px)" srcset="img/bird-peq.svg" type="image/svg">
+                <img class="imgEntrada" src="img/bird.svg" alt="Imagem Ilustrativa" width="480" height="480">
+            </picture>
+
+            
+            <div class="padrao-titulo-texto">
+                <h1>Casa Automática para Passarinhos</h1>
+                <p id="a">A casa automática para passarinhos é um projeto que visa a praticidade na hora da alimentação dos bichinhos, podendo ser agendado os horários em que será despejada a comida. Dependendo do fluxo de entradas e saídas de passarinhos, a quantidade de vezes que a ração será despejada muda, para que não haja falta nem desperdício de alimento.</p>
+            </div>
+        </section>
+        
+
+        <section id="configBasicas">
+            <div>
+                <div  class="padrao-titulo-texto"><br>
+                    <h1>Configurações básicas</h1>
+                    <p>Aqui você poderá fazer o download da movimentação dos pássaros, assim como ir para a sessão de personalizar os horários em que a comida será despensada para os bichinhos.</p>
+                </div>
+
+                <div id="botoes">
+                    <a id="botao" href="#">Download da movimentação</a>
+                    <a id="botao-transp" href="horarios.html">Horários da alimentação</a>
+                </div>
+            </div>
+            <img id="imgConfig" src="img/update.svg" alt="Imagem Ilustrativa" width="580" height="580" loading="lazy">
+        </section>
+    </main>
+
+    <footer>
+        <!--in the footer we just have the informations of devs and project
+        
+            ***all the html pages have this footer configuration-->
+        <div id="proj">
+            <h4>Projeto</h4>
+            <p>Este projeto interdisciplinar (que engloba as matérias: Programação WEB, Programação para Dispositivos Móveis e Sistemas Operacionais II) é um site responsivo usando HTML, CSS e JavaScript, capaz de ser visualizado desde telas de computadores até telas de celulares. Foi feito por Beatriz Bittencourt em conjunto com os alunos Gabriel Corrêa, Renan Carlos e Samuel Marques, que ficaram responsáveis por todo o complemento, como a pesquisa e trabalho com a placa ESP32, peças necessárias, fios e a programação da placa.
+            </p>
+            <p>
+                As ilustrações desse site foram feitas usando <a target="_blank" href="https://storyset.com/nature">Storyset</a>
+            </p>
+        </div>
+
+        <div id="desenv">
+            <div>
+                <h4>Encontre os desenvolvedores</h4>
+            </div>
+            <div>
+                <p><a class="link-dev" target="_blank" href="https://www.linkedin.com/in/beatriz-bittencourt-51a71b217/"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Beatriz Bittencourt</a></p>
+                <p><a class="link-dev" target="_blank" href="#"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Gabriel Corrêa</a></p>
+                <p><a class="link-dev" target="_blank" href="#"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Renan Carlos</a></p>
+                <p><a class="link-dev" target="_blank" href="https://www.linkedin.com/in/samuel-marques-dos-santos-41b00728a/"><i class="fa-brands fa-linkedin-in" style="color: #3a76df;"></i> Samuel Marques</a></p> 
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
